@@ -1,0 +1,21 @@
+1.assertEquals(expected,actual)  和 assertNotEquals(expected,actual);
+比较实际值与预期值是否一致。如果一致，程序继续运行，否则抛出异常，会打印报错信息。常用断言方法，便于调试。
+
+2.assertTrue(message,condition) 和 assertFalse(message,condition)
+如果条件的真假与预期相同，程序继续运行，否则抛出异常，不会打印报错信息。
+
+3.assertNull(message,object) 和 assertNotNull(message,object)
+判断一个对象是否为空，如果结果与预期相同，程序继续运行，否则抛出异常。
+
+4.assertSame(expected,actual) 和 assertNotSame(expected,actual)
+判断预期的值和实际的值是否为同一个参数(即判断是否为相同的引用)，如果结果与预期相同，程序继续运行，否则抛出异常。
+
+assertSame(expected,actual) 和 assertEquals(expected,actual)的区别；
+
+assertSame(A,B)  ————————————> A==B
+
+assertEquals(A,B)————————————>A.equals(B)
+
+5.fail(message)
+“fail”断言能使测试立即失败，这种断言通常用于标记某个不应该被到达的分支。例如测试中某个代码块要try  catch，则在catch代码中加入fail(message)方法，否则代码直接进入catch块，无法判断测试结果。
+
