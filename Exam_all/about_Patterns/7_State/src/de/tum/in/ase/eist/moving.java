@@ -6,7 +6,7 @@ public class moving extends ElevatorState {
 
     public void signal(int floor, Controller controller){
         if (floor == controller.getNextStop()) {
-            controller.setState(new StopState());
+            controller.setState(new stop());
         }
     }
 

@@ -26,7 +26,6 @@ public class Controller {
 			pool.add(floor);
 		}
 		state.request(floor, this);
-
 	}
 
 	public void signal(int floor) {
