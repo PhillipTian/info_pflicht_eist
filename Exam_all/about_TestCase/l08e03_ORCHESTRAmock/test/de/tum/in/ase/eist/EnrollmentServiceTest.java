@@ -31,6 +31,7 @@ class EnrollmentServiceTest {
 		enrollmentService.enroll(student,mock);
 		assertEquals(expectedSize, student.getCourses().size());
 		verify(mock);
+
 	}
 
 	@Test
